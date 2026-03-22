@@ -1,32 +1,10 @@
 import math
-
-
-class Circle:
-    """A class to represent a circle."""
-
-    def __init__(self, radius: float):
-        """
-        Initialise Circle with a radius.
-
-        Parameters:
-            radius (float): The radius of the circle.
-        """
-        self.radius = radius
+class Circle: 
+    def __init__(self, radius: float): # A class to represent a circle
+        self.radius = radius # Initialise Circle with a radius
 
     def perimeter(self) -> float:
-        """
-        Calculate and return the perimeter (circumference) of the circle.
-
-        Returns:
-            float: The perimeter of the circle.
-        """
-        return 2 * math.pi * self.radius
+        return 2 * math.pi * self.radius # Calculate and return the perimeter (circumference) of the circle
 
     def area(self) -> float:
-        """
-        Calculate and return the area of the circle.
-
-        Returns:
-            float: The area of the circle.
-        """
-        return math.pi * self.radius ** 2
+        return math.pi * self.radius ** 2 # Calculate and return the area of the circle
